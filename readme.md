@@ -20,6 +20,9 @@ arrayMove(['a', 'b', 'c'], 1, 2);
 
 arrayMove(['a', 'b', 'c'], -1, 0);
 //=> ['c', 'a', 'b']
+
+arrayMove(['a', 'b', 'c'], -2, -3);
+//=> ['b', 'a', 'c']
 ```
 
 
@@ -49,7 +52,8 @@ If negative, it will begin that many elements from the end.
 
 Type: `number`
 
-Index of where to move the item.
+Index of where to move the item.  
+If negative, it will begin that many elements from the end.
 
 
 ## License
