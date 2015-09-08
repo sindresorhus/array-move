@@ -15,13 +15,15 @@ $ npm install --save array-move
 ```js
 var arrayMove = require('array-move');
 
-arrayMove(['a', 'b', 'c'], 1, 2);
+var input = ['a', 'b', 'c'];
+
+arrayMove(input, 1, 2);
 //=> ['a', 'c', 'b']
 
-arrayMove(['a', 'b', 'c'], -1, 0);
+arrayMove(input, -1, 0);
 //=> ['c', 'a', 'b']
 
-arrayMove(['a', 'b', 'c'], -2, -3);
+arrayMove(input, -2, -3);
 //=> ['b', 'a', 'c']
 ```
 
