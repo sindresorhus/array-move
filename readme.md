@@ -13,9 +13,9 @@ $ npm install --save array-move
 ## Usage
 
 ```js
-var arrayMove = require('array-move');
+const arrayMove = require('array-move');
 
-var input = ['a', 'b', 'c'];
+const input = ['a', 'b', 'c'];
 
 arrayMove(input, 1, 2);
 //=> ['a', 'c', 'b']
