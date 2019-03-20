@@ -32,7 +32,7 @@ declare const arrayMove: {
 	@param from - Index of item to move. If negative, it will begin that many elements from the end.
 	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
 	*/
-	mut(array: unknown[], from: number, to: number): void;
+	mutate(array: unknown[], from: number, to: number): void;
 };
 
 export default arrayMove;

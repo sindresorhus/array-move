@@ -34,7 +34,7 @@ arrayMove(input, -2, -3);
 
 Returns a new array with the item moved to the new position.
 
-### arrayMove.mut(array, from, to)
+### arrayMove.mutate(array, from, to)
 
 Moves the item to the new position in the `array` array. Useful for huge arrays where absolute performance is needed.
 
