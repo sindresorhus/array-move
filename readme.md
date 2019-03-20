@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save array-move
+$ npm install array-move
 ```
 
 
@@ -30,32 +30,29 @@ arrayMove(input, -2, -3);
 
 ## API
 
-### arrayMove(input, from, to)
+### arrayMove(array, from, to)
 
 Returns a new array with the item moved to the new position.
 
-### arrayMove.mut(input, from, to)
+### arrayMove.mut(array, from, to)
 
-Moves the item to the new position in the input array.  
-Useful for huge arrays where absolute performance is needed.
+Moves the item to the new position in the `array` array. Useful for huge arrays where absolute performance is needed.
 
-#### input
+#### array
 
-Type: `array`
+Type: `Array`
 
 #### from
 
 Type: `number`
 
-Index of item to move.  
-If negative, it will begin that many elements from the end.
+Index of item to move. If negative, it will begin that many elements from the end.
 
 #### to
 
 Type: `number`
 
-Index of where to move the item.  
-If negative, it will begin that many elements from the end.
+Index of where to move the item. If negative, it will begin that many elements from the end.
 
 
 ## License
