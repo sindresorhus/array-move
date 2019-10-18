@@ -23,7 +23,7 @@ declare const arrayMove: {
 	//=> ['b', 'a', 'c']
 	```
 	*/
-	<ValueType>(array: ValueType[], from: number, to: number): ValueType[];
+	<ValueType>(array: ReadonlyArray<ValueType>, from: number, to: number): ValueType[];
 
 	/**
 	Moves the item to the new position in the input array. Useful for huge arrays where absolute performance is needed.
