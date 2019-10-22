@@ -53,8 +53,3 @@ Index of item to move. If negative, it will begin that many elements from the en
 Type: `number`
 
 Index of where to move the item. If negative, it will begin that many elements from the end.
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)
