@@ -4,6 +4,7 @@
 	"description": "Move an array item to a different position",
 	"license": "MIT",
 	"repository": "sindresorhus/array-move",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
