@@ -1,14 +1,12 @@
-# array-move [![Build Status](https://travis-ci.org/sindresorhus/array-move.svg?branch=master)](https://travis-ci.org/sindresorhus/array-move)
+# array-move [![Build Status](https://travis-ci.com/sindresorhus/array-move.svg?branch=master)](https://travis-ci.com/github/sindresorhus/array-move)
 
 > Move an array item to a different position
-
 
 ## Install
 
 ```
 $ npm install array-move
 ```
-
 
 ## Usage
 
@@ -17,22 +15,24 @@ const arrayMove = require('array-move');
 
 const input = ['a', 'b', 'c'];
 
-arrayMove(input, 1, 2);
+const array1 = arrayMove(input, 1, 2);
+console.log(array1);
 //=> ['a', 'c', 'b']
 
-arrayMove(input, -1, 0);
+const array2 = arrayMove(input, -1, 0);
+console.log(array2);
 //=> ['c', 'a', 'b']
 
-arrayMove(input, -2, -3);
+const array3 = arrayMove(input, -2, -3);
+console.log(array3);
 //=> ['b', 'a', 'c']
 ```
-
 
 ## API
 
 ### arrayMove(array, from, to)
 
-Returns a new array with the item moved to the new position.
+Clones the given `array`, moves the item to a new position in the new array, and then returns the new array. The given `array` is not mutated.
 
 ### arrayMove.mutate(array, from, to)
 
