@@ -9,10 +9,11 @@ const arrayMoveMutate = (array, from, to) => {
 	}
 };
 
-module.exports = (array, from, to) => {
+const arrayMove = (array, from, to) => {
 	array = [...array];
 	arrayMoveMutate(array, from, to);
 	return array;
 };
 
+module.exports = arrayMove;
 module.exports.mutate = arrayMoveMutate;
