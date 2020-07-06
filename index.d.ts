@@ -36,9 +36,6 @@ declare const arrayMove: {
 	@param to - Index of where to move the item. If negative, it will begin that many elements from the end.
 	*/
 	mutate(array: unknown[], from: number, to: number): void;
-
-	// TODO: Remove this for the next major release
-	default: typeof arrayMove;
 };
 
 export = arrayMove;
