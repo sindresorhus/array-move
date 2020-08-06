@@ -38,18 +38,8 @@ Clones the given `array`, moves the item to a new position in the new array, and
 
 Moves the item to the new position in the `array` array. Useful for huge arrays where absolute performance is needed.
 
-#### array
-
-Type: `Array`
-
-#### from
-
-Type: `number`
-
-Index of item to move. If negative, it will begin that many elements from the end.
-
-#### to
-
-Type: `number`
-
-Index of where to move the item. If negative, it will begin that many elements from the end.
+| Parameter | Type   | Description                                                                                  |
+| --------- | ------ | -------------------------------------------------------------------------------------------- |
+| array     | Array  |                                                                                              |
+| from      | number | Index of item to move. If negative, it will begin that many elements from the end.           |
+| to        | number | Index of where to move the item. If negative, it will begin that many elements from the end. |
