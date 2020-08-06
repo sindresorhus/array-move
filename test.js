@@ -9,6 +9,8 @@ test('main', t => {
 	t.deepEqual(arrayMove(fixture, 1, -2), [1, 3, 4, 2, 5]);
 	t.deepEqual(arrayMove(fixture, -3, -4), [1, 3, 2, 4, 5]);
 	t.deepEqual(arrayMove(fixture, 5, 6), [1, 2, 3, 4, 5]);
+	t.deepEqual(arrayMove(fixture, -1000, 0), fixture);
+	t.deepEqual(arrayMove(fixture, 1000, 0), fixture);
 });
 
 test('.mutate', t => {
