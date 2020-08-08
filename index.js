@@ -1,11 +1,13 @@
 'use strict';
 
 const arrayMoveMutate = (array, from, to) => {
-	const startIndex = to < 0 ? array.length + to : to;
+	const startIndex = from < 0 ? array.length + from : from;
 
 	if (startIndex >= 0 && startIndex < array.length) {
-		const item = array.splice(from, 1)[0];
-		array.splice(startIndex, 0, item);
+		const endIndex = to < 0 ? array.length + to : to;
+
+		const [item] = array.splice(from, 1);
+		array.splice(endIndex, 0, item);
 	}
 };
 
