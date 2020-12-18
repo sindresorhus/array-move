@@ -18,8 +18,16 @@
 	},
 	"files": [
 		"index.js",
+		"index.mjs",
 		"index.d.ts"
 	],
+	"exports": {
+		".": {
+			"import": "./index.mjs",
+			"require": "./index.js",
+			"default": "./index.js"
+		}
+	},
 	"keywords": [
 		"array",
 		"move",
