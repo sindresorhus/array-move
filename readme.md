@@ -1,4 +1,4 @@
-# array-move [![Build Status](https://travis-ci.com/sindresorhus/array-move.svg?branch=master)](https://travis-ci.com/github/sindresorhus/array-move)
+# array-move
 
 > Move an array item to a different position
 
