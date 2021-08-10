@@ -11,30 +11,30 @@ $ npm install array-move
 ## Usage
 
 ```js
-const arrayMove = require('array-move');
+import {arrayMoveImmutable} from 'array-move';
 
 const input = ['a', 'b', 'c'];
 
-const array1 = arrayMove(input, 1, 2);
+const array1 = arrayMoveImmutable(input, 1, 2);
 console.log(array1);
 //=> ['a', 'c', 'b']
 
-const array2 = arrayMove(input, -1, 0);
+const array2 = arrayMoveImmutable(input, -1, 0);
 console.log(array2);
 //=> ['c', 'a', 'b']
 
-const array3 = arrayMove(input, -2, -3);
+const array3 = arrayMoveImmutable(input, -2, -3);
 console.log(array3);
 //=> ['b', 'a', 'c']
 ```
 
 ## API
 
-### arrayMove(array, from, to)
+### arrayMoveImmutable(array, fromIndex, toIndex)
 
 Clones the given `array`, moves the item to a new position in the new array, and then returns the new array. The given `array` is not mutated.
 
-### arrayMove.mutate(array, from, to)
+### arrayMoveMutable(array, fromIndex, toIndex)
 
 Moves the item to the new position in the `array` array. Useful for huge arrays where absolute performance is needed.
 
@@ -42,14 +42,18 @@ Moves the item to the new position in the `array` array. Useful for huge arrays 
 
 Type: `Array`
 
-#### from
+#### fromIndex
 
 Type: `number`
 
-Index of item to move. If negative, it will begin that many elements from the end.
+The index of item to move.
 
-#### to
+If negative, it will begin that many elements from the end.
+
+#### toIndex
 
 Type: `number`
 
-Index of where to move the item. If negative, it will begin that many elements from the end.
+The index of where to move the item.
+
+If negative, it will begin that many elements from the end.

@@ -1,21 +1,16 @@
-'use strict';
-
-const arrayMoveMutate = (array, from, to) => {
-	const startIndex = from < 0 ? array.length + from : from;
+export function arrayMoveMutable(array, fromIndex, toIndex) {
+	const startIndex = fromIndex < 0 ? array.length + fromIndex : fromIndex;
 
 	if (startIndex >= 0 && startIndex < array.length) {
-		const endIndex = to < 0 ? array.length + to : to;
+		const endIndex = toIndex < 0 ? array.length + toIndex : toIndex;
 
-		const [item] = array.splice(from, 1);
+		const [item] = array.splice(fromIndex, 1);
 		array.splice(endIndex, 0, item);
 	}
-};
+}
 
-const arrayMove = (array, from, to) => {
+export function arrayMoveImmutable(array, fromIndex, toIndex) {
 	array = [...array];
-	arrayMoveMutate(array, from, to);
+	arrayMoveMutable(array, fromIndex, toIndex);
 	return array;
-};
-
-module.exports = arrayMove;
-module.exports.mutate = arrayMoveMutate;
+}
