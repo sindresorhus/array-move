@@ -1,6 +1,6 @@
 {
 	"name": "array-move",
-	"version": "3.0.1",
+	"version": "4.0.0",
 	"description": "Move an array item to a different position",
 	"license": "MIT",
 	"repository": "sindresorhus/array-move",
