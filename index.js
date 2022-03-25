@@ -10,7 +10,7 @@ export function arrayMoveMutable(array, fromIndex, toIndex) {
 }
 
 export function arrayMoveImmutable(array, fromIndex, toIndex) {
-	array = [...array];
-	arrayMoveMutable(array, fromIndex, toIndex);
-	return array;
+	const newArray = [...array];
+	arrayMoveMutable(newArray, fromIndex, toIndex);
+	return newArray;
 }
