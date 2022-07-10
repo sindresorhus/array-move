@@ -46,7 +46,7 @@ Type: `Array`
 
 Type: `number`
 
-The index of item to move.
+The index of the item to move.
 
 If negative, it will begin that many elements from the end.
 
