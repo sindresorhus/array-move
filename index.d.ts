@@ -31,7 +31,7 @@ export function arrayMoveImmutable<ValueType>(array: readonly ValueType[], fromI
 Moves the item to the new position in the input array. Useful for huge arrays where absolute performance is needed.
 
 @param array - The array to modify.
-@param fromIndex - The index of item to move. If negative, it will begin that many elements from the end.
+@param fromIndex - The index of the item to move. If negative, it will begin that many elements from the end.
 @param toIndex - The index of where to move the item. If negative, it will begin that many elements from the end.
 
 @example
